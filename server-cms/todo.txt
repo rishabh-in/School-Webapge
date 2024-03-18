@@ -1,0 +1,29 @@
+-------------------------------------Setup Strapi (18th - 19th March)------------------------
+Setup strapi with mongodb
+
+create a collection named - gallery
+this will have data 
+{
+  img,
+  tag,
+}
+
+Get all images- api/gallery - It will fetch all media files
+To get image of specific tag - api/gallery?tag="tag";
+
+Deploy the app on strapi cloud
+
+Check the Api using postman
+
+---------------------------------------- Start building frontend (19th - 20th March)-----------------------
+
+1. Create react app
+2. create folder structure
+3. Develop components
+      - Header
+      - Body
+        -Img Corousel
+      - Footer
+
+4. Integrate with strapi api
+5. Deploy on github pages
