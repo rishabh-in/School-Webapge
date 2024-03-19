@@ -1,0 +1,14 @@
+:root {
+  --primary-color: #F54E39;
+  --header-font-size: calc(1.5rem + 0.8vw);
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+.header-fonts {
+  font-size: 2.4rem;
+}
+

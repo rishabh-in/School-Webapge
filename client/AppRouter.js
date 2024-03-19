@@ -6,7 +6,6 @@ import About from "./Pages/About";
 import Academics from "./Pages/Academics";
 import App from "./App";
 import Contact from "./Pages/Contact";
-
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -27,6 +26,9 @@ const appRouter = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />
+      },
+      {
+        path: "public/logo.png",
       }
     ],
     errorElement: <Error />
