@@ -1,6 +1,6 @@
 import "../../styles/gallery.css"
 
-const Info = () => {
+const PageInfo = () => {
   return (
     <div className="info-container-wrapper">
       <div className="info-container">
@@ -11,4 +11,4 @@ const Info = () => {
   )
 }
 
-export default Info;
+export default PageInfo;

@@ -1,9 +1,9 @@
 import {Fragment} from 'react';
-import Body from '../Components/Gallery/Body';
+import BodyContainer from '../Components/Gallery/BodyContainer';
 const Gallery = () => {
   return (
     <Fragment>
-      <Body />
+      <BodyContainer />
     </Fragment>
   )
 }

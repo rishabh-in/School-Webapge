@@ -41,6 +41,7 @@
   height: 6rem;
   font-size: 2.4rem;
   color: var(--primary-color);
+  background-color: white;
   text-transform: uppercase;
   border: 1.4px solid var(--primary-color);
   border-radius: 0.4rem;
