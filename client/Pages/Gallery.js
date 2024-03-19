@@ -1,6 +1,10 @@
+import {Fragment} from 'react';
+import Body from '../Components/Gallery/Body';
 const Gallery = () => {
   return (
-    <div>Gallery</div>
+    <Fragment>
+      <Body />
+    </Fragment>
   )
 }
 
