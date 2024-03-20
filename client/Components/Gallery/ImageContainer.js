@@ -25,9 +25,14 @@ const ImageContainer = () => {
 
   }, [])
 
-  const fetchImagesData = () => {
+  const fetchImagesData = (event) => {
     return new Promise( async(resolve, reject) => {
-      let response = await fetch(IMG_URL);
+      let response;
+      if(event && event !== 'All') {
+        response = await fetch(`${IMG_URL}?populate=image&filters[event][$eq]=${event}`)
+      } else {
+        response = await fetch(`${IMG_URL}?populate=image`);
+      }
       let json = await response.json()
       resolve(json);
     })
@@ -41,16 +46,19 @@ const ImageContainer = () => {
     })
   }
 
-  const handleEventChange = (e) => {
+  const handleEventChange = async (e) => {
     if(e?.target?.nodeName === 'LI') {
       const menuItems = document.querySelectorAll(".event-menu li");
       menuItems.forEach((node) => {
         node.classList.remove("event-btn-active");
       })
       e.target.classList.add("event-btn-active");
+      let eventImages = await fetchImagesData(e.target.textContent)
+      console.log(eventImages)
+      setImageData(eventImages?.data)
     }
   }
-
+  console.log(imageData)
   return (
     <div className="media-container-wrapper">
       <div className="media-container">

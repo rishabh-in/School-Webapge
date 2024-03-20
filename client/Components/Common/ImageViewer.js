@@ -25,8 +25,7 @@ const ImageViewer = (props) => {
       setImageId(currentImageId + 1);
     }
   }
-
-  const currImageInfo = imgArray[currentImageId - 1].attributes;
+  const currImageInfo = imgArray.find((img) => img.id == imgId)?.attributes;
   const imgAttributes = currImageInfo?.image?.data;
 
   return (

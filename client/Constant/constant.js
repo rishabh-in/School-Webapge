@@ -1,4 +1,4 @@
-export const IMG_URL = "http://localhost:1337/api/images?populate=image";
+export const IMG_URL = "http://localhost:1337/api/images";
 
 export const EVENTS_URL = "http://localhost:1337/api/events";
 
