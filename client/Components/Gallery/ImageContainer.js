@@ -41,13 +41,22 @@ const ImageContainer = () => {
     })
   }
 
+  const handleEventChange = (e) => {
+    if(e?.target?.nodeName === 'LI') {
+      const menuItems = document.querySelectorAll(".event-menu li");
+      menuItems.forEach((node) => {
+        node.classList.remove("event-btn-active");
+      })
+      e.target.classList.add("event-btn-active");
+    }
+  }
 
   return (
     <div className="media-container-wrapper">
       <div className="media-container">
-        <div className="event-btn">
-          <ul>
-            <li>All</li>
+        <div className="event-menu-container">
+          <ul className='event-menu' onClick={(e) => handleEventChange(e)}>
+            <li className='event-btn-active'>All</li>
             {events && events.length > 0 && events.map((e) => (
               <li key={e.attributes.id}>{e.attributes.eventName}</li>
             ))}
