@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "gallery_bodies",
+  "info": {
+    "singularName": "gallery-body",
+    "pluralName": "gallery-bodies",
+    "displayName": "gallery-body"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "background": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

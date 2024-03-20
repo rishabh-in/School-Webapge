@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_statics",
+  "info": {
+    "singularName": "home-static",
+    "pluralName": "home-statics",
+    "displayName": "Home-Static",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "headerLogo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "menuItem1": {
+      "type": "string"
+    },
+    "menuItem2": {
+      "type": "string"
+    },
+    "menuItem3": {
+      "type": "string"
+    },
+    "menuItem4": {
+      "type": "string"
+    },
+    "menuBtn1": {
+      "type": "string"
+    },
+    "menuBtn2": {
+      "type": "string"
+    }
+  }
+}

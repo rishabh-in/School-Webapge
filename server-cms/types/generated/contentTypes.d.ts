@@ -819,6 +819,75 @@ export interface ApiEventEvent extends Schema.CollectionType {
   };
 }
 
+export interface ApiGalleryBodyGalleryBody extends Schema.SingleType {
+  collectionName: 'gallery_bodies';
+  info: {
+    singularName: 'gallery-body';
+    pluralName: 'gallery-bodies';
+    displayName: 'gallery-body';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    description: Attribute.String;
+    background: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::gallery-body.gallery-body',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::gallery-body.gallery-body',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiHomeStaticHomeStatic extends Schema.SingleType {
+  collectionName: 'home_statics';
+  info: {
+    singularName: 'home-static';
+    pluralName: 'home-statics';
+    displayName: 'Home-Static';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    headerLogo: Attribute.Media;
+    menuItem1: Attribute.String;
+    menuItem2: Attribute.String;
+    menuItem3: Attribute.String;
+    menuItem4: Attribute.String;
+    menuBtn1: Attribute.String;
+    menuBtn2: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::home-static.home-static',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::home-static.home-static',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiImageImage extends Schema.CollectionType {
   collectionName: 'images';
   info: {
@@ -872,6 +941,8 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::event.event': ApiEventEvent;
+      'api::gallery-body.gallery-body': ApiGalleryBodyGalleryBody;
+      'api::home-static.home-static': ApiHomeStaticHomeStatic;
       'api::image.image': ApiImageImage;
     }
   }
