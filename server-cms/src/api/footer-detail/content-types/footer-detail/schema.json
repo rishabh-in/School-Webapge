@@ -1,0 +1,129 @@
+{
+  "kind": "singleType",
+  "collectionName": "footer_details",
+  "info": {
+    "singularName": "footer-detail",
+    "pluralName": "footer-details",
+    "displayName": "footer-detail"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "footerLogo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "schoolName": {
+      "type": "string"
+    },
+    "schoolMotto": {
+      "type": "string"
+    },
+    "schoolEst": {
+      "type": "string"
+    },
+    "quickLinks": {
+      "type": "string"
+    },
+    "quickLink1": {
+      "type": "string"
+    },
+    "quickLink2": {
+      "type": "string"
+    },
+    "quickLink3": {
+      "type": "string"
+    },
+    "quickLink4": {
+      "type": "string"
+    },
+    "contact": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "number": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "text1": {
+      "type": "string"
+    },
+    "btnText": {
+      "type": "string"
+    },
+    "credits": {
+      "type": "string"
+    },
+    "sitemap": {
+      "type": "string"
+    },
+    "designedByText": {
+      "type": "string"
+    },
+    "pepperContent": {
+      "type": "string"
+    },
+    "twitter": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "linkedIn": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "insta": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "facebook": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "youtube": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

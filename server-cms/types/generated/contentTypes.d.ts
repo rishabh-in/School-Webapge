@@ -819,6 +819,59 @@ export interface ApiEventEvent extends Schema.CollectionType {
   };
 }
 
+export interface ApiFooterDetailFooterDetail extends Schema.SingleType {
+  collectionName: 'footer_details';
+  info: {
+    singularName: 'footer-detail';
+    pluralName: 'footer-details';
+    displayName: 'footer-detail';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    footerLogo: Attribute.Media;
+    schoolName: Attribute.String;
+    schoolMotto: Attribute.String;
+    schoolEst: Attribute.String;
+    quickLinks: Attribute.String;
+    quickLink1: Attribute.String;
+    quickLink2: Attribute.String;
+    quickLink3: Attribute.String;
+    quickLink4: Attribute.String;
+    contact: Attribute.String;
+    address: Attribute.String;
+    number: Attribute.String;
+    email: Attribute.Email;
+    text1: Attribute.String;
+    btnText: Attribute.String;
+    credits: Attribute.String;
+    sitemap: Attribute.String;
+    designedByText: Attribute.String;
+    pepperContent: Attribute.String;
+    twitter: Attribute.Media;
+    linkedIn: Attribute.Media;
+    insta: Attribute.Media;
+    facebook: Attribute.Media;
+    youtube: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::footer-detail.footer-detail',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::footer-detail.footer-detail',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiGalleryBodyGalleryBody extends Schema.SingleType {
   collectionName: 'gallery_bodies';
   info: {
@@ -941,6 +994,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::event.event': ApiEventEvent;
+      'api::footer-detail.footer-detail': ApiFooterDetailFooterDetail;
       'api::gallery-body.gallery-body': ApiGalleryBodyGalleryBody;
       'api::home-static.home-static': ApiHomeStaticHomeStatic;
       'api::image.image': ApiImageImage;
