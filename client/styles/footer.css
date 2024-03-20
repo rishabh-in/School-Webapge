@@ -1,5 +1,143 @@
-.footer-wrapper {
+.parent-footer-wrapper {
   border: 0.1px solid red;
   width: 100%;
   height: 48.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: #F5F5F5;
+}
+
+.footer-wrapper {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0rem;
+}
+
+.footer-top {
+  display: flex;
+  
+}
+
+.footer-top > div {
+  width: 20%;
+}
+
+.footer-logo-container {
+  width: 12%;
+}
+
+.footer-logo-container > img{
+  width: 11.8rem;
+  height: 13.8rem;
+}
+
+.school-details{
+  width: 20.6rem;
+}
+
+.school-details > p {
+  margin-bottom: 0.8rem;
+}
+
+.school-details .school-name {
+  font-family: Playfair Display;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #191919;
+}
+
+.school-details .school-moto {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #232C95;
+}
+
+.school-details .school-est {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #404040;
+}
+
+
+.footer-quick-links {
+  width: 15.3rem;
+}
+
+.quick-links > ul {
+  list-style: none;
+}
+
+.quick-links > p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4A4A4A;
+}
+
+.quick-links > ul > li > a {
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #191919;
+}
+
+.contact-info {
+  width: 25.1rem;
+}
+
+.contact-info > p {
+font-weight: 400;
+font-family: Poppins;
+font-size: 1.6rem;
+line-height: 2.4rem;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.contact-info .section-title {
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 3.6rem;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.donate-section {
+  width: 18.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.donate-section > p {
+  font-family: Playfair Display;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 2rem 0rem;
 }
