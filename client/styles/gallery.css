@@ -157,3 +157,24 @@
   text-align: left;
   margin-left: 0.8rem;
 }
+
+
+.load-more-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.load-more-btn > button {
+  width: 19.8rem;
+  height: 6.1rem;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  color: #F54E39;
+  border: 2px solid #F54E39;
+  border-radius: 0.4rem;
+  background-color: white;
+  cursor: pointer;
+}

@@ -57,6 +57,9 @@ const ImageContainer = () => {
             <ImageCard key={img.id} imgData={img}/>
           )) : "No Images Found"}
         </div>
+        <div className='load-more-btn'>
+          <button>View more</button>
+        </div>
       </div>
     </div>
   )
