@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react';
 import ImageCard from './ImageCard';
 import { EVENTS_URL, IMG_URL } from '../../Constant/constant';
+import DataContext from '../Common/UseContext';
 
 const ImageContainer = () => {
   // Initially the selected event will be = all
@@ -53,9 +54,12 @@ const ImageContainer = () => {
           </ul>
         </div>
         <div className='image-container'>
-          {imageData && imageData.length > 0 ? imageData.map((img) => (
-            <ImageCard key={img.id} imgData={img}/>
-          )) : "No Images Found"}
+          <DataContext.Provider value={imageData}>
+            {imageData && imageData.length > 0 ? imageData.map((img) => (
+              <ImageCard key={img.id} imgData={img}/>
+              )) : "No Images Found"}
+              </DataContext.Provider>
+
         </div>
         <div className='load-more-btn'>
           <button>View more</button>
