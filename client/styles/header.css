@@ -31,15 +31,19 @@
   text-align: center;
   list-style: none;
   margin: auto 2.4rem;
-  font-size: 2.4rem;
   font-family: "Poppins";
   cursor: pointer;
+}
+
+.menu-items-container > ul > li > a {
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: #1A1A1A;
 }
 
 .btn-csr {
   width: 15.6rem;
   height: 6rem;
-  font-size: 2.4rem;
   color: var(--primary-color);
   background-color: white;
   text-transform: uppercase;
@@ -47,14 +51,24 @@
   border-radius: 0.4rem;
 }
 
+.btn-csr > a {
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: #F54E39;
+}
+
 .btn-donate {
   width: 15.6rem;
   height: 6rem;
-  font-size: 2.4rem;
-  color: white;
   background-color: var(--primary-color);
   border: 1.4px solid var(--primary-color);
   border-radius: 0.4rem;
+}
+
+.btn-donate > a {
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: white;
 }
 
 .menu-items-container > ul > button {

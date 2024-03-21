@@ -1,6 +1,6 @@
 import "../../styles/footer.css"
 import logo from "../../public/static/logo.png"
-
+import {Link} from 'react-router-dom'
 
 const Footer = () => {
 
@@ -19,10 +19,10 @@ const Footer = () => {
               <div className="quick-links">
                 <p className="section-title">QUICK LINKS</p>
                 <ul>
-                  <li><a href="#">Admissions</a></li>
-                  <li><a href="#">Alumni association</a></li>
-                  <li><a href="#">Donate</a></li>
-                  <li><a href="#">Events</a></li>
+                  <li><Link to="/admission">Admissions</Link></li>
+                  <li><Link to="/alumni">Alumni association</Link></li>
+                  <li><Link to="donate">Donate</Link></li>
+                  <li><Link to="events">Events</Link></li>
                 </ul>
               </div>
               <div className="contact-info">

@@ -2,6 +2,7 @@ import { STRIPE_BASE_URL } from '../../Constant/constant';
 import '../../styles/header.css';
 import { useEffect, useState } from 'react';
 import Loading from './Loading';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [headerData, setHeaderData] = useState();
@@ -27,12 +28,12 @@ const Header = () => {
         </div>
         <div className="menu-items-container">
           <ul>
-            <li>{headerData.attributes.menuItem1}</li>
-            <li>{headerData.attributes.menuItem2}</li>
-            <li>{headerData.attributes.menuItem3}</li>
-            <li>{headerData.attributes.menuItem4}</li>
-            <button className='btn-csr'>{headerData.attributes.menuBtn1}</button>
-            <button className='btn-donate'>{headerData.attributes.menuBtn2} <span className="heart">♥️</span></button>
+            <li><Link to="/school">{headerData.attributes.menuItem1}</Link></li>
+            <li><Link to="/academics">{headerData.attributes.menuItem2}</Link></li>
+            <li><Link to="/life">{headerData.attributes.menuItem3}</Link></li>
+            <li><Link to="/contact">{headerData.attributes.menuItem4}</Link></li>
+            <button className='btn-csr'><Link to="csr">{headerData.attributes.menuBtn1}</Link></button>
+            <button className='btn-donate'><Link to="/donate">{headerData.attributes.menuBtn2} <span className="heart">♥️</span></Link></button>
           </ul>
           
         </div>
