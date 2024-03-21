@@ -1,4 +1,4 @@
-import { STRIPE_BASE_URL } from '../../Constant/constant';
+import { FETCH_HEADER_DATA, STRIPE_BASE_URL } from '../../Constant/constant';
 import '../../styles/header.css';
 import { useEffect, useState } from 'react';
 import Loading from './Loading';
@@ -9,7 +9,7 @@ const Header = () => {
 
   useEffect(() => {
     const fetchHeaderData = async() => {
-      const response = await fetch("http://localhost:1337/api/home-static?populate=*");
+      const response = await fetch(FETCH_HEADER_DATA);
       const json = await response.json();
       setHeaderData(json.data);
     } 

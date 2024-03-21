@@ -58,7 +58,6 @@ const ImageContainer = () => {
       setImageData(eventImages?.data)
     }
   }
-  console.log(imageData)
   return (
     <div className="media-container-wrapper">
       <div className="media-container">
