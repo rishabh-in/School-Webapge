@@ -1,5 +1,5 @@
 import {Fragment, useState} from 'react';
-import { STRIPE_BASE_URL } from "../../Constant/constant";
+import { CAL_ICON, STRIPE_BASE_URL } from "../../Constant/constant";
 import formatDate from "../../helper/dateHelper";
 import calLogo from "../../public/static/cal.png"
 import ImageViewer from '../Common/ImageViewer';
@@ -27,7 +27,7 @@ const ImageCard = ({imgData}) => {
           <div className="image-info">
             <p className="img-event-text">{imageInfo.description}</p>
             <div className="cal-icon">
-              <img src={calLogo}/>
+              <img src={CAL_ICON}/>
               <p>{formatDate(imageInfo.uploadedOn)}</p>
             </div>
           </div>
