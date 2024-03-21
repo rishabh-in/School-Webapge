@@ -825,6 +825,7 @@ export interface ApiFooterDetailFooterDetail extends Schema.SingleType {
     singularName: 'footer-detail';
     pluralName: 'footer-details';
     displayName: 'footer-detail';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -848,12 +849,12 @@ export interface ApiFooterDetailFooterDetail extends Schema.SingleType {
     credits: Attribute.String;
     sitemap: Attribute.String;
     designedByText: Attribute.String;
-    pepperContent: Attribute.String;
     twitter: Attribute.Media;
     linkedIn: Attribute.Media;
     insta: Attribute.Media;
     facebook: Attribute.Media;
     youtube: Attribute.Media;
+    pepperContentLogo: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
